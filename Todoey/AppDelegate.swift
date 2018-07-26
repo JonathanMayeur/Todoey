@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Todoey
 //
-//  Created by Stefanie Mayeur on 26/07/2018.
+//  Created by Jonathan Mayeur on 26/07/2018.
 //  Copyright © 2018 Jonathan Mayeur. All rights reserved.
 //
 
@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        print(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last! as String)
+        
         return true
     }
 
